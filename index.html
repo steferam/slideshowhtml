@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mercurio Stefano</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" media="all" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var $ = jQuery.noConflict();
+    $(window).load(function() {
+		$('.flexslider').flexslider({
+          animation: "fade"
+		});
+	
+		$(function() {
+		  $('.show_menu').click(function(){
+			$('.menu').fadeIn();
+			$('.show_menu').fadeOut();
+			$('.hide_menu').fadeIn();
+		  });
+		
+		  $('.hide_menu').click(function(){
+			$('.menu').fadeOut();
+			$('.show_menu').fadeIn();
+			$('.hide_menu').fadeOut();
+		  });
+	    });
+	});
+	</script>
+</head>
+<body>
+<div class="container">
+    <div class="slider_container">
+		<div class="flexslider">
+	      <ul class="slides">
+	    	<li>
+	    		<img src="media/slides1.jpg"/>
+	    		<div class="flex-caption">
+                    <div class="caption_title_line"><h2>Cala Rossa</h2><p>Veduta di una baia nei dintorni di Porto Vecchio in Corsica.</p></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<img src="media/slides2.jpg"/>
+	    		<div class="flex-caption1">
+                     <div class="caption_title_line1"><h2>San Cipriano</h2><p>Veduta di una baia nei dintorni di Porto Vecchio in Corsica.</p></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<img src="media/slides4.jpg"/>
+	    		<div class="flex-caption">
+                     <div class="caption_title_line"><h2>Saint Ives</h2><p>La spiaggia del villaggio in Cornovaglia.</p></div>
+                </div>
+	    	</li>
+	    	<li>
+	    		<img src="media/slides6.jpg"/>
+	    		<div class="flex-caption1">
+                     <div class="caption_title_line1"><h2>Ring of Kerry</h2><p>Sulla strada percorrendo la penisola del Kerry in Irlanda.</p></div>
+                </div>
+	    	</li>
+	      </ul>
+	    </div>
+    </div>
+</div>  
+</body>
+</html>
